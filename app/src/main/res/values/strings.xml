@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prandium</string>
+    <string name="title_Calender">Calender</string>
+    <string name="title_Recipes">Recipes</string>
+    <string name="title_Shopping_List">Shopping List</string>
+    <string name="title_activity_main">Prandium</string>
+</resources>
