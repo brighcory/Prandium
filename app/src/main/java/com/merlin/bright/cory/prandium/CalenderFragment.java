@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 
 public class CalenderFragment extends Fragment {
 
-    public interface OnDateSelectedInterface {
+    public interface OnCalenderSelected{
         void onDateSelectedSelected(int index);
     }
 
@@ -23,13 +23,8 @@ public class CalenderFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
-        CalenderFragment.OnDateSelectedInterface listener = (OnDateSelectedInterface) getActivity();
+//        OnCalenderSelected listener = (OnCalenderSelected) getActivity();
         View view = inflater.inflate(R.layout.fragment_calender, container, false);
-
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.calenderRecyclerView);
-
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(layoutManager);
 
         return view;
     }

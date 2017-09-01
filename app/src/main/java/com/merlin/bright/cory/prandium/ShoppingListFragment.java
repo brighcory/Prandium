@@ -22,16 +22,16 @@ public class ShoppingListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
-        ShoppingListFragment.OnShoppingSelectedInterface listener = (OnShoppingSelectedInterface) getActivity();
+//        ShoppingListFragment.OnShoppingSelectedInterface listener = (OnShoppingSelectedInterface) getActivity();
         View view = inflater.inflate(R.layout.fragment_shopping_list, container, false);
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.ShoppingListRecyclerView);
-        ShoppingListAdapter shoppingListAdapter = new ShoppingListAdapter(listener);
+//        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.ShoppingListRecyclerView);
+//        ShoppingListAdapter shoppingListAdapter = new ShoppingListAdapter(listener);
 
 
-        recyclerView.setAdapter(shoppingListAdapter);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setAdapter(shoppingListAdapter);
+//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+//        recyclerView.setLayoutManager(layoutManager);
 
         return view;
     }
