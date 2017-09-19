@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.ui;
 
 
 import android.os.Bundle;
@@ -8,6 +8,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
+import com.merlin.bright.cory.prandium.R;
+import com.merlin.bright.cory.prandium.ViewPagerFragment;
+import com.merlin.bright.cory.prandium.calender.CalenderFragment;
+import com.merlin.bright.cory.prandium.recipe.DualPaneFragment;
+import com.merlin.bright.cory.prandium.recipe.GridFragment;
+import com.merlin.bright.cory.prandium.recipe.RecipesFragment;
+import com.merlin.bright.cory.prandium.shoppinglist.ShoppingListFragment;
 
 public class MainActivity extends AppCompatActivity
         implements RecipesFragment.OnRecipeSelectedInterface, GridFragment.OnRecipeSelectedInterface {
@@ -25,49 +33,41 @@ public class MainActivity extends AppCompatActivity
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_calender:
-                    if (getSupportFragmentManager().findFragmentByTag(CALENDER_INDEX) == null) {
-                        CalenderFragment calenderFragment = new CalenderFragment();
-                        FragmentManager fragmentManager = getSupportFragmentManager();
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        fragmentTransaction.replace(R.id.placeholder, calenderFragment, CALENDER_INDEX);
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
-                    }
+                    CalenderFragment calenderFragment = new CalenderFragment();
+                    FragmentManager calenderFragmentManager = getSupportFragmentManager();
+                    FragmentTransaction calenderFragmentTransaction = calenderFragmentManager.beginTransaction();
+                    calenderFragmentTransaction.replace(R.id.placeholder, calenderFragment, CALENDER_INDEX);
+                    calenderFragmentTransaction.addToBackStack(null);
+                    calenderFragmentTransaction.commit();
                     return true;
                 case R.id.navigation_Recipes:
                     boolean isTablet = getResources().getBoolean(R.bool.is_tablet);
 
                     if (!isTablet) {
 
-                        if (getSupportFragmentManager().findFragmentByTag(RECIPE_INDEX) == null) {
-                            RecipesFragment recipesFragment = new RecipesFragment();
-                            FragmentManager fragmentManager = getSupportFragmentManager();
-                            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                            fragmentTransaction.replace(R.id.placeholder, recipesFragment, RECIPE_INDEX);
-                            fragmentTransaction.addToBackStack(null);
-                            fragmentTransaction.commit();
-                        }
+                        RecipesFragment recipesFragment = new RecipesFragment();
+                        FragmentManager recipeFragmentManager = getSupportFragmentManager();
+                        FragmentTransaction recipeFragmentTransaction = recipeFragmentManager.beginTransaction();
+                        recipeFragmentTransaction.replace(R.id.placeholder, recipesFragment, RECIPE_INDEX);
+                        recipeFragmentTransaction.addToBackStack(null);
+                        recipeFragmentTransaction.commit();
                     } else {
 
-                        if (getSupportFragmentManager().findFragmentByTag(RECIPE_INDEX) == null) {
-                            GridFragment recipesFragment = new GridFragment();
-                            FragmentManager fragmentManager = getSupportFragmentManager();
-                            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                            fragmentTransaction.replace(R.id.placeholder, recipesFragment, RECIPE_INDEX);
-                            fragmentTransaction.addToBackStack(null);
-                            fragmentTransaction.commit();
-                        }
+                        GridFragment recipesFragment = new GridFragment();
+                        FragmentManager gridFragmentManager = getSupportFragmentManager();
+                        FragmentTransaction gridFragmentTransaction = gridFragmentManager.beginTransaction();
+                        gridFragmentTransaction.replace(R.id.placeholder, recipesFragment, RECIPE_INDEX);
+                        gridFragmentTransaction.addToBackStack(null);
+                        gridFragmentTransaction.commit();
                     }
                     return true;
                 case R.id.navigation_shopping_list:
-                    if (getSupportFragmentManager().findFragmentByTag(SHOPPINGLIST_INDEX) == null) {
-                        ShoppingListFragment shoppingFragment = new ShoppingListFragment();
-                        FragmentManager fragmentManager = getSupportFragmentManager();
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        fragmentTransaction.replace(R.id.placeholder, shoppingFragment, SHOPPINGLIST_INDEX);
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
-                    }
+                    ShoppingListFragment shoppingFragment = new ShoppingListFragment();
+                    FragmentManager shoppingListFragmentManager = getSupportFragmentManager();
+                    FragmentTransaction shoppingListFragmentTransaction = shoppingListFragmentManager.beginTransaction();
+                    shoppingListFragmentTransaction.replace(R.id.placeholder, shoppingFragment, SHOPPINGLIST_INDEX);
+                    shoppingListFragmentTransaction.addToBackStack(null);
+                    shoppingListFragmentTransaction.commit();
                     return true;
             }
             return false;

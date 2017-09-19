@@ -1,23 +1,19 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.shoppinglist;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.merlin.bright.cory.prandium.R;
 
 /**
  * Created by cory on 7/20/17.
  */
 
 public class ShoppingListFragment extends Fragment {
-    public interface OnShoppingSelectedInterface {
-        void onShoppingListSelected(int index);
-    }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -34,5 +30,9 @@ public class ShoppingListFragment extends Fragment {
 //        recyclerView.setLayoutManager(layoutManager);
 
         return view;
+    }
+
+    public interface OnShoppingSelectedInterface {
+        void onShoppingListSelected(int index);
     }
 }

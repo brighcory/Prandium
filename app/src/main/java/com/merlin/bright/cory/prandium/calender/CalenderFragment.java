@@ -1,23 +1,19 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.calender;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.merlin.bright.cory.prandium.R;
 
 /**
  * Created by cory on 7/20/17.
  */
 
 public class CalenderFragment extends Fragment {
-
-    public interface OnCalenderSelected{
-        void onDateSelectedSelected(int index);
-    }
 
     @Nullable
     @Override
@@ -27,5 +23,9 @@ public class CalenderFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_calender, container, false);
 
         return view;
+    }
+
+    public interface OnCalenderSelected {
+        void onDateSelectedSelected(int index);
     }
 }

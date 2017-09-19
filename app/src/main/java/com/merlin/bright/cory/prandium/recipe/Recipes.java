@@ -1,4 +1,6 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.recipe;
+
+import com.merlin.bright.cory.prandium.R;
 
 /**
  * Created by cory on 6/9/17.

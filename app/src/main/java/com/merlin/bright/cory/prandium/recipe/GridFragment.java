@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.recipe;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,15 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.merlin.bright.cory.prandium.R;
+
 /**
  * Created by cory on 8/30/17.
  */
 
 public class GridFragment extends Fragment {
-
-    public interface OnRecipeSelectedInterface {
-        void onGridRecipeSelected(int index);
-    }
 
     @Nullable
     @Override
@@ -39,5 +37,9 @@ public class GridFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         return view;
+    }
+
+    public interface OnRecipeSelectedInterface {
+        void onGridRecipeSelected(int index);
     }
 }

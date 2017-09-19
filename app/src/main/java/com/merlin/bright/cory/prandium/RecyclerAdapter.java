@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.merlin.bright.cory.prandium.recipe.Recipes;
+
 /**
  * Created by cory on 7/10/17.
  */
@@ -31,6 +33,8 @@ public abstract class RecyclerAdapter extends RecyclerView.Adapter {
     public int getItemCount() {
         return Recipes.names.length;
     }
+
+    protected abstract void onRecipeSelected(int index);
 
     private class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView mTextView;
@@ -58,6 +62,4 @@ public abstract class RecyclerAdapter extends RecyclerView.Adapter {
 
 
     }
-
-    protected abstract void onRecipeSelected(int index);
 }

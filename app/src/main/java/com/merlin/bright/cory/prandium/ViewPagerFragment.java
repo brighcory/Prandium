@@ -10,6 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.merlin.bright.cory.prandium.recipe.DirectionsFragment;
+import com.merlin.bright.cory.prandium.recipe.IngredientsFragment;
+import com.merlin.bright.cory.prandium.recipe.Recipes;
+
 /**
  * Created by cory on 8/23/17.
  */
@@ -24,10 +28,10 @@ public class ViewPagerFragment extends Fragment {
         getActivity().setTitle(Recipes.names[index]);
         View view = inflater.inflate(R.layout.fragement_veiwpager, container, false);
 
-        final IngredientsFragment ingredeientsFragment = new IngredientsFragment();
+        final IngredientsFragment ingredientsFragment = new IngredientsFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(KEY_RECIPE_INDEX, index);
-        ingredeientsFragment.setArguments(bundle);
+        ingredientsFragment.setArguments(bundle);
         final DirectionsFragment directionsFragment = new DirectionsFragment();
         bundle = new Bundle();
         bundle.putInt(KEY_RECIPE_INDEX, index);
@@ -38,7 +42,7 @@ public class ViewPagerFragment extends Fragment {
         viewPager.setAdapter(new FragmentPagerAdapter(getChildFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                return (position == 0) ? ingredeientsFragment : directionsFragment;
+                return (position == 0) ? ingredientsFragment : directionsFragment;
             }
 
             @Override

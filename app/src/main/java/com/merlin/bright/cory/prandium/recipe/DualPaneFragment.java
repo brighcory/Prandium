@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.recipe;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,9 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.merlin.bright.cory.prandium.R;
+import com.merlin.bright.cory.prandium.ViewPagerFragment;
 
 /**
  * Created by cory on 8/30/17.
