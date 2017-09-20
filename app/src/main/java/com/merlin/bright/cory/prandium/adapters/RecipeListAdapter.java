@@ -1,4 +1,7 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.adapters;
+
+import com.merlin.bright.cory.prandium.R;
+import com.merlin.bright.cory.prandium.ui.RecipesFragment;
 
 /**
  * Created by cory on 7/10/17.

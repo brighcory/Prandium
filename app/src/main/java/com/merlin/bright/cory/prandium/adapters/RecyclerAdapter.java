@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium;
+package com.merlin.bright.cory.prandium.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.merlin.bright.cory.prandium.R;
+import com.merlin.bright.cory.prandium.Recipes;
 
 /**
  * Created by cory on 7/10/17.
