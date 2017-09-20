@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium.recipe;
+package com.merlin.bright.cory.prandium;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,8 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.merlin.bright.cory.prandium.R;
 
 /**
  * Created by cory on 6/9/17.

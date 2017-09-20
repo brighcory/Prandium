@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium.recipe;
+package com.merlin.bright.cory.prandium;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,9 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
-
-import com.merlin.bright.cory.prandium.R;
-import com.merlin.bright.cory.prandium.ViewPagerFragment;
 
 /**
  * Created by cory on 8/28/17.

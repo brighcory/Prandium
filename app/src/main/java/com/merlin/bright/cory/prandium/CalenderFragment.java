@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium.calender;
+package com.merlin.bright.cory.prandium;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,8 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.merlin.bright.cory.prandium.R;
 
 /**
  * Created by cory on 7/20/17.

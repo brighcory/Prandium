@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.merlin.bright.cory.prandium.recipe.Recipes;
-
 /**
  * Created by cory on 7/10/17.
  */
@@ -57,9 +55,6 @@ public abstract class RecyclerAdapter extends RecyclerView.Adapter {
         @Override
         public void onClick(View v) {
             onRecipeSelected(mIndex);
-
         }
-
-
     }
 }

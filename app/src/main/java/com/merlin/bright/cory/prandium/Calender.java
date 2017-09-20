@@ -1,4 +1,4 @@
-package com.merlin.bright.cory.prandium.calender;
+package com.merlin.bright.cory.prandium;
 
 /**
  * Created by cory on 6/9/17.

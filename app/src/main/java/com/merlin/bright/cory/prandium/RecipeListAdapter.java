@@ -1,7 +1,4 @@
-package com.merlin.bright.cory.prandium.recipe;
-
-import com.merlin.bright.cory.prandium.R;
-import com.merlin.bright.cory.prandium.RecyclerAdapter;
+package com.merlin.bright.cory.prandium;
 
 /**
  * Created by cory on 7/10/17.

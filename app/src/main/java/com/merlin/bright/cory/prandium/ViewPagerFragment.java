@@ -10,10 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.merlin.bright.cory.prandium.recipe.DirectionsFragment;
-import com.merlin.bright.cory.prandium.recipe.IngredientsFragment;
-import com.merlin.bright.cory.prandium.recipe.Recipes;
-
 /**
  * Created by cory on 8/23/17.
  */
