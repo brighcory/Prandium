@@ -5,4 +5,8 @@ package com.merlin.bright.cory.prandium;
  */
 
 public class Calender {
+    int[] day = {1, 2, 4};
+    String[] month = {"Sept", "Sept", "Sept"};
+    int[] year = {2017, 2017, 2017};
+    String[] meal = {"Breakfast", "Lunch", "Dinner"};
 }

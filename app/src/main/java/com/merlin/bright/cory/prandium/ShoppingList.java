@@ -5,4 +5,6 @@ package com.merlin.bright.cory.prandium;
  */
 
 public class ShoppingList {
+    String[] mStore = {"Freddys", "Albertsons", "Winco"};
+    String[] mlist = {"Milk", "Cheese", "Butter", "Apples", "Bananas", "Chicken", "Flour"};
 }

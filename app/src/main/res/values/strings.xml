@@ -4,4 +4,7 @@
     <string name="title_Recipes">Recipes</string>
     <string name="title_Shopping_List">Shopping List</string>
     <string name="title_activity_main">Prandium</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="dinner">Dinner</string>
+    <string name="lunch">Lunch</string>
 </resources>

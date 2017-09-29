@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:baselineAlignBottom="true"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:src="@android:drawable/toast_frame"/>
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="84dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@+id/backgroundImageView"
+        android:layout_alignLeft="@+id/backgroundImageView"
+        android:layout_alignRight="@+id/backgroundImageView"
+        android:layout_alignTop="@+id/backgroundImageView"
+        android:gravity="center"
+        android:textColor="#fff"
+        tools:text="26"/>
+
+    <LinearLayout
+        android:id="@+id/mealLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_toEndOf="@+id/backgroundImageView"
+        android:layout_toRightOf="@+id/backgroundImageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/breakfastText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/breakfast"/>
+
+        <TextView
+            android:id="@+id/lunchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lunch"/>
+
+        <TextView
+            android:id="@+id/dinnerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dinner"/>
+    </LinearLayout>
+
+</RelativeLayout>

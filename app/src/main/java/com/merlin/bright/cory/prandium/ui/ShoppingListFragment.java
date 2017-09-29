@@ -21,7 +21,6 @@ public class ShoppingListFragment extends Fragment {
 //        ShoppingListFragment.OnShoppingSelectedInterface listener = (OnShoppingSelectedInterface) getActivity();
         View view = inflater.inflate(R.layout.fragment_shopping_list, container, false);
 
-//        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.ShoppingListRecyclerView);
 //        ShoppingListAdapter shoppingListAdapter = new ShoppingListAdapter(listener);
 
 
