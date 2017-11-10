@@ -11,15 +11,22 @@
     tools:context="com.merlin.bright.cory.prandium.ui.MainActivity"
     tools:layout_gravity="top">
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
+    <android.support.v7.widget.ScrollingTabContainerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="#55ffffff"
-        app:menu="@menu/navigation"
-        tools:layout_gravity="bottom">
+        android:layout_height="match_parent">
 
-    </android.support.design.widget.BottomNavigationView>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#55ffffff"
+            app:menu="@menu/navigation"
+            tools:layout_gravity="bottom">
+
+        </android.support.design.widget.BottomNavigationView>
+
+    </android.support.v7.widget.ScrollingTabContainerView>
 
 </FrameLayout>

@@ -1,6 +1,6 @@
 package com.merlin.bright.cory.prandium.ui;
 
-import com.merlin.bright.cory.prandium.Recipes;
+import com.merlin.bright.cory.prandium.models.Recipes;
 
 /**
  * Created by cory on 8/29/17.

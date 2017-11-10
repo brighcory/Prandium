@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.merlin.bright.cory.prandium.R;
-import com.merlin.bright.cory.prandium.Recipes;
+import com.merlin.bright.cory.prandium.models.Recipes;
 
 /**
  * Created by cory on 7/10/17.

@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.merlin.bright.cory.prandium.R;
-import com.merlin.bright.cory.prandium.Recipes;
+import com.merlin.bright.cory.prandium.models.Recipes;
 
 /**
  * Created by cory on 8/23/17.
